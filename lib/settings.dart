@@ -7,7 +7,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 /// For theme colors go to [lib/Ui/Theme/theme.dart]
 class AppSettings {
   /// Basic Settings
-  static const String applicationName = 'Bonik Bazar';
+  static const String applicationName = 'Bonikbazar';
   static const String andoidPackageName = 'com.text.bonikbazar.app';
   static const String iOSAppId = '12345678';
   static const String playstoreURLAndroid =
@@ -16,7 +16,7 @@ class AppSettings {
   static const String shareAppText = "Share this App";
 
   ///API Setting
-  static const String hostUrl = "PLACE_YOUR_HOST_URL_HERE";
+  static const String hostUrl = "https://demo.bonikbazar.com";
 
   static const int apiDataLoadLimit = 20;
   static const int maxCategoryShowLengthInHomeScreen = 5;
@@ -33,16 +33,16 @@ it will call API in background without showing the process and when data availab
   static const DeepLinkType deepLinkingType = DeepLinkType.firebase;
 
   ///Native deep link
-  static const String shareNavigationWebUrl = "eclassify.thewrteam.in";
+  static const String shareNavigationWebUrl = "demo.bonikbazar.com";
 
   //static const String shareNavigationWebUrl = "eclassify.page.link";
 
   /// You will find this prefix from firebase console in dynamic link section
   static const String deepLinkPrefix =
-      "https://eclassify.page.link"; //demo.page.link
+      "https://demo.bonikbazar.page.link"; //demo.page.link
 
   //set anything you want
-  static const String deepLinkName = "eclassify.com"; //deeplink demo.com
+  static const String deepLinkName = "demo.bonikbazar.com"; //deeplink demo.com
 
   static const MapType googleMapType =
       MapType.normal; //none , normal , satellite , terrain , hybrid

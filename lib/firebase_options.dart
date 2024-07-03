@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,15 +25,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -50,21 +41,53 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyApCJcVfUTKAdfiNB2vZ399YgJEFy_d-vk',
-    appId: '1:6343732161:android:be9cbc67ef8a19792b5d40',
-    messagingSenderId: '6343732161',
-    projectId: 'eclassify-wrteam',
-    storageBucket: 'eclassify-wrteam.appspot.com',
+    apiKey: 'AIzaSyDYK3omwDOYxVkJHFdULpbZLv6yxwFcxk8',
+    appId: '1:982947529011:android:5585c72dac36c7322ebe46',
+    messagingSenderId: '982947529011',
+    projectId: 'bonikbazar-b19dd',
+    storageBucket: 'bonikbazar-b19dd.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBgKBEjpogvomINJ6uutsUQrHntz4g4PUQ',
-    appId: '1:6343732161:ios:5cc58a2dcfbbb66b2b5d40',
-    messagingSenderId: '6343732161',
-    projectId: 'eclassify-wrteam',
-    storageBucket: 'eclassify-wrteam.appspot.com',
-    androidClientId: '6343732161-dhn3si4lpio5bhr32iu9u6j6d8ja0npr.apps.googleusercontent.com',
-    iosClientId: '6343732161-tutdvlsj06eis0n3eli5c4985fi0lkht.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBSctVUAAN4sxw0LsbRIqANZsIMNsw8X5E',
+    appId: '1:982947529011:ios:bdc596549c226c6b2ebe46',
+    messagingSenderId: '982947529011',
+    projectId: 'bonikbazar-b19dd',
+    storageBucket: 'bonikbazar-b19dd.appspot.com',
+    androidClientId: '982947529011-gecj7jjup8l4d44lfmg7e93tcjicmfrb.apps.googleusercontent.com',
+    iosClientId: '982947529011-c45q6sneg6ji6vc51dtunnohfmo5c5d1.apps.googleusercontent.com',
     iosBundleId: 'com.eclassify.wrteam',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyCRVZ1nkqmjoW8-hDw0imLMoKyVOwH-NA0',
+    appId: '1:982947529011:web:e49bf23a530a03432ebe46',
+    messagingSenderId: '982947529011',
+    projectId: 'bonikbazar-b19dd',
+    authDomain: 'bonikbazar-b19dd.firebaseapp.com',
+    storageBucket: 'bonikbazar-b19dd.appspot.com',
+    measurementId: 'G-ZE01BZ6ZEE',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyBSctVUAAN4sxw0LsbRIqANZsIMNsw8X5E',
+    appId: '1:982947529011:ios:17d2e49d6720af422ebe46',
+    messagingSenderId: '982947529011',
+    projectId: 'bonikbazar-b19dd',
+    storageBucket: 'bonikbazar-b19dd.appspot.com',
+    androidClientId: '982947529011-gecj7jjup8l4d44lfmg7e93tcjicmfrb.apps.googleusercontent.com',
+    iosClientId: '982947529011-6i4eu6ogvq5e4ngbrpuaofvr7k1jfkej.apps.googleusercontent.com',
+    iosBundleId: 'com.eclassify.eclassify',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyCRVZ1nkqmjoW8-hDw0imLMoKyVOwH-NA0',
+    appId: '1:982947529011:web:f57ed9fceddbe0362ebe46',
+    messagingSenderId: '982947529011',
+    projectId: 'bonikbazar-b19dd',
+    authDomain: 'bonikbazar-b19dd.firebaseapp.com',
+    storageBucket: 'bonikbazar-b19dd.appspot.com',
+    measurementId: 'G-9SS4X5BRT7',
+  );
+
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "982947529011",
+    "project_id": "bonikbazar-b19dd",
+    "storage_bucket": "bonikbazar-b19dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982947529011:android:5585c72dac36c7322ebe46",
+        "android_client_info": {
+          "package_name": "com.test.bonikbazar.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYK3omwDOYxVkJHFdULpbZLv6yxwFcxk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

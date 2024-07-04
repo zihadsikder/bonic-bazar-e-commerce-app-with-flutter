@@ -7,11 +7,11 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 /// For theme colors go to [lib/Ui/Theme/theme.dart]
 class AppSettings {
   /// Basic Settings
-  static const String applicationName = 'Bonikbazar';
+  static const String applicationName = 'Bonik Bazar';
   static const String andoidPackageName = 'com.text.bonikbazar.app';
   static const String iOSAppId = '12345678';
   static const String playstoreURLAndroid =
-      "https://play.google.com/store/apps/details?id=$andoidPackageName";
+      "https://play.google.com/store/apps/details?id=com.test.bonikbazar.app";
   static const String appstoreURLios = "https://apps.apple.com/";
   static const String shareAppText = "Share this App";
 
@@ -52,8 +52,8 @@ it will call API in background without showing the process and when data availab
   static const int otpTimeOutSecond = 60 * 2;
 
   ///This code will show on login screen [Note: don't add  + symbol]
-  static const String defaultCountryCode = "91";
-  static const bool disableCountrySelection = false;
+  static const String defaultCountryCode = "88";
+  static const bool disableCountrySelection = true;
 
   /* Default [False], this will hide
  Country number choose option in login screen. if your App is for only one country this might be helpful*/

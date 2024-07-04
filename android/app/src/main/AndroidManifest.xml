@@ -31,12 +31,12 @@
         android:allowBackup="false"
         android:fullBackupOnly="false"
         android:icon="@mipmap/ic_launcher"
-        android:label="eClassify"
+        android:label="BonikBazar"
         android:usesCleartextTraffic="true">
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="PLACE_YOUR_GOOGLE_MAP_KEY_HERE" />
+            android:value="AIzaSyDYK3omwDOYxVkJHFdULpbZLv6yxwFcxk8" />
       
 
 

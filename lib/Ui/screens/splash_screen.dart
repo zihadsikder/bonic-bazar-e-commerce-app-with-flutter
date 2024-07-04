@@ -9,25 +9,25 @@ import 'package:eClassify/Utils/AppIcon.dart';
 import 'package:eClassify/Utils/Extensions/extensions.dart';
 import 'package:eClassify/Utils/responsiveSize.dart';
 import 'package:eClassify/Utils/ui_utils.dart';
-import 'package:eClassify/app/routes.dart';
+// import 'package:eClassify/app/routes.dart';
 import 'package:eClassify/data/Repositories/system_repository.dart';
 
 // import 'package:flutter/services.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 
 // import '../app/routes.dart';
-import 'package:eClassify/data/cubits/system/fetch_language_cubit.dart';
-import 'package:eClassify/data/cubits/system/fetch_system_settings_cubit.dart';
+// import 'package:eClassify/data/cubits/system/fetch_language_cubit.dart';
+// import 'package:eClassify/data/cubits/system/fetch_system_settings_cubit.dart';
 import 'package:eClassify/data/model/system_settings_model.dart';
 
 // import 'package:eClassify/main.dart';
 // import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+// import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-import '../../data/cubits/system/language_cubit.dart';
+// import '../../data/cubits/system/language_cubit.dart';
 
 import '../../exports/main_export.dart';
 
@@ -140,19 +140,16 @@ class SplashScreenState extends State<SplashScreen>
   }
 
   void navigateToScreen() {
-
     if (context
             .read<FetchSystemSettingsCubit>()
             .getSetting(SystemSetting.maintenanceMode) ==
         "1") {
-
       Future.delayed(const Duration(seconds: 1), () {
         if (mounted) {
           Navigator.of(context).pushReplacementNamed(Routes.maintenanceMode);
         }
       });
     } else if (HiveUtils.isUserFirstTime() == true) {
-
       Future.delayed(const Duration(seconds: 1), () {
         if (mounted) {
           Navigator.of(context).pushReplacementNamed(Routes.onboarding);
@@ -175,7 +172,6 @@ class SplashScreenState extends State<SplashScreen>
           },
         );
       } else {
-
         Future.delayed(const Duration(seconds: 1), () {
           if (mounted) {
             Navigator.of(context)
@@ -184,7 +180,6 @@ class SplashScreenState extends State<SplashScreen>
         });
       }
     } else {
-
       Future.delayed(const Duration(seconds: 1), () {
         if (mounted) {
           Navigator.of(context).pushReplacementNamed(Routes.login);
@@ -236,13 +231,18 @@ class SplashScreenState extends State<SplashScreen>
         },
         child: AnnotatedRegion(
           value: SystemUiOverlayStyle(
-            statusBarColor: context.color.territoryColor,
+            statusBarColor: Colors.white,
           ),
           child: Scaffold(
-            backgroundColor: context.color.territoryColor,
-            bottomNavigationBar: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10.0),
-              child: UiUtils.getSvg(AppIcons.companyLogo),
+            backgroundColor: Colors.white,
+            bottomNavigationBar: SizedBox(
+              width: 100,
+              height: 100,
+              child: Center(
+                  child: Text(
+                'App Version: 1.0.1',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              )),
             ),
             body: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -259,22 +259,22 @@ class SplashScreenState extends State<SplashScreen>
                     ),
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(top: 10.0.rh(context)),
-                  child: Column(
-                    children: [
-                      Text("BonikBazar".translate(context))
-                          .size(context.font.xxLarge)
-                          .color(context.color.secondaryColor)
-                          .centerAlign()
-                          .bold(weight: FontWeight.w600),
-                      Text("\"${"E-Commerce App".translate(context)}\"")
-                          .size(context.font.smaller)
-                          .color(context.color.secondaryColor)
-                          .centerAlign(),
-                    ],
-                  ),
-                ),
+                // Padding(
+                //   padding: EdgeInsets.only(top: 10.0.rh(context)),
+                //   child: Column(
+                //     children: [
+                //       Text("BonikBazar".translate(context))
+                //           .size(context.font.xxLarge)
+                //           .color(context.color.secondaryColor)
+                //           .centerAlign()
+                //           .bold(weight: FontWeight.w600),
+                //       Text("\"${"E-Commerce App".translate(context)}\"")
+                //           .size(context.font.smaller)
+                //           .color(context.color.secondaryColor)
+                //           .centerAlign(),
+                //     ],
+                //   ),
+                // ),
               ],
             ),
           ),

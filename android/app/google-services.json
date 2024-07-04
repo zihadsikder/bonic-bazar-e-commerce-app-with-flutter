@@ -37,13 +37,6 @@
             {
               "client_id": "982947529011-rbdrgsg71ns019cob34i6ss0g97g9eo3.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "982947529011-6i4eu6ogvq5e4ngbrpuaofvr7k1jfkej.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.eclassify.eclassify"
-              }
             }
           ]
         }

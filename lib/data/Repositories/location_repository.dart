@@ -16,7 +16,7 @@ class GooglePlaceRepository {
     try {
 
       Map<String, dynamic> queryParameters = {
-        Api.placeApiKey: Constant.googlePlaceAPIkey,
+        Api.placeApiKey: "AIzaSyDYK3omwDOYxVkJHFdULpbZLv6yxwFcxk8",
         Api.input: text,
       };
 
@@ -42,7 +42,7 @@ class GooglePlaceRepository {
     try {
       ///************************ */
       Map<String, dynamic> queryParameters = {
-        Api.placeApiKey: Constant.googlePlaceAPIkey,
+        Api.placeApiKey: "AIzaSyDYK3omwDOYxVkJHFdULpbZLv6yxwFcxk8",
         Api.input: text,
         Api.type: "(cities)"
       };

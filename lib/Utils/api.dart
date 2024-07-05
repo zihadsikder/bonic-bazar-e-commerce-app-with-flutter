@@ -333,6 +333,7 @@ class Api {
       bool? useBaseUrl}) async {
     try {
       //
+      print("queryparam ============= $queryParameters");
       final Dio dio = Dio();
       dio.interceptors.add(NetworkRequestInterseptor());
 

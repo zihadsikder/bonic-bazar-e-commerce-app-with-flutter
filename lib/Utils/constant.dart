@@ -21,7 +21,7 @@ class Constant {
   static String baseUrl = AppSettings.baseUrl;
 
   //Do not add anything here
-  static String googlePlaceAPIkey = "";
+  static String googlePlaceAPIkey = "AIzaSyDYK3omwDOYxVkJHFdULpbZLv6yxwFcxk8";
 
   ////Payment gatway API keys
   static String razorpayKey = AppSettings.razorpayKey;

@@ -264,7 +264,7 @@ class _ChooseLocationMapState extends State<ChooseLocationMap> {
                       String? sublocality = "";
                       String? pointofinterest = "";
                       Response response = await Dio().get(
-                          "https://maps.googleapis.com/maps/api/geocode/json?key=${Constant.googlePlaceAPIkey}&latlng=${marker?.position.latitude},${marker?.position.longitude}");
+                          "https://maps.googleapis.com/maps/api/geocode/json?key={AIzaSyDYK3omwDOYxVkJHFdULpbZLv6yxwFcxk8}&latlng=${marker?.position.latitude},${marker?.position.longitude}");
 
                       if ((response.data as Map).containsKey("error_message")) {
                         throw response.data;

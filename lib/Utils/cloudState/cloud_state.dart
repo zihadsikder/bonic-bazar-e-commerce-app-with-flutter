@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 abstract class CloudState<T extends StatefulWidget> extends State<T> {

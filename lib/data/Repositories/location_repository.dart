@@ -16,7 +16,9 @@ class GooglePlaceRepository {
     try {
 
       Map<String, dynamic> queryParameters = {
-        Api.placeApiKey: "AIzaSyDYK3omwDOYxVkJHFdULpbZLv6yxwFcxk8",
+
+        Api.placeApiKey: 'AIzaSyDYK3omwDOYxVkJHFdULpbZLv6yxwFcxk8',
+       //Api.placeApiKey: Constant.googlePlaceAPIkey,
         Api.input: text,
       };
 
@@ -42,7 +44,9 @@ class GooglePlaceRepository {
     try {
       ///************************ */
       Map<String, dynamic> queryParameters = {
-        Api.placeApiKey: "AIzaSyDYK3omwDOYxVkJHFdULpbZLv6yxwFcxk8",
+        Api.placeApiKey: 'AIzaSyDYK3omwDOYxVkJHFdULpbZLv6yxwFcxk8',
+        //Api.placeApiKey: Constant.googlePlaceAPIkey,
+
         Api.input: text,
         Api.type: "(cities)"
       };
@@ -115,7 +119,8 @@ class GooglePlaceRepository {
       rethrow;
     }
     Map<String, dynamic> queryParameters = {
-      Api.placeApiKey: Constant.googlePlaceAPIkey,
+      Api.placeApiKey: 'AIzaSyDYK3omwDOYxVkJHFdULpbZLv6yxwFcxk8',
+      //Api.placeApiKey: Constant.googlePlaceAPIkey,
       Api.placeid: placeId
     };
 

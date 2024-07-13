@@ -229,7 +229,7 @@ class LoginScreenState extends State<LoginScreen> {
         _onTapContinue();
       }
 
-      // firebaseLoginProcess();
+      //firebaseLoginProcess();
     }
     // showSnackBar( UiUtils.getTranslatedLabel(context, "acceptPolicy"), context);
   }
@@ -433,7 +433,7 @@ class LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 8,
               ),
-              Text("loginToeClassify".translate(context))
+              Text("loginToBonikBazar".translate(context))
                   .size(context.font.large)
                   .color(
                     context.color.textColorDark,
